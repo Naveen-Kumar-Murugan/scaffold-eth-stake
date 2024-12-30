@@ -6,11 +6,11 @@ contract YourContract {
 
     uint public constant threshold  = 1 ether;
     mapping (address => uint) public stakelog;
-    uint256 public deadline = block.timestamp + 120;
+    uint256 public deadline = block.timestamp + 120000;
     address[] public stakelogarr;
-    address owner;
+    address public owner;
 
-    constructor() {
+    constructor () {
         owner=msg.sender; 
     } 
 
