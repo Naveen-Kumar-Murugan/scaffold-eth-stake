@@ -26,7 +26,7 @@ contract YourContract {
 
     function balanceof() public view returns(uint){
         timeleft();
-        return owner.balance;
+        return address(this).balance;
     }
 
     function withdraw() public {
